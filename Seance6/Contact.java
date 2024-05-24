@@ -8,10 +8,6 @@ public class Contact implements Serializable{
        this.pseudo = p;
        this.email = e;
     }
-
-    public String toString() {
-       return this.pseudo + " : " + this.email;
-    }
     
     public String getPseudo() {
        return this.pseudo;
@@ -19,5 +15,10 @@ public class Contact implements Serializable{
     
     public String getEmail() {
        return this.email;
+    }
+
+    @Override
+    public String toString() {
+        return this.pseudo + " : " + this.email;
     }
 }

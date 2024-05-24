@@ -22,7 +22,7 @@ public class Appel{
             Scanner sc = new Scanner(System.in);
             boolean etat = true;
             while(etat){
-                System.out.print("Que souhaitez vous faire ?\n[1] Ajouter un contact\n[2] Consulter un contact\n[3]Exit\n");
+                System.out.print("Que souhaitez vous faire ?\n[1] Ajouter un contact\n[2] Consulter un contact\n[3] Exit\n");
                 System.out.print("[>] ");
 
                 int entree = sc.nextInt();
