@@ -12,13 +12,13 @@ public class LancerListeContacts{
 
             ListeContacts listeContacts = new ListeContacts(); /* Creer une instance de ListeContacts */ 
             // On cree les contacts
-            // Contact c1 = new Contact("Talmo", "neuille@freure.com");
-            // Contact c2 = new Contact("Augerau", "stephi.lopipi@gmail.com");
-            // Contact c3 = new Contact("tonton_57", "gregoire.hirtz@fortnite.com");
+            Contact c1 = new Contact("Talmo", "neuille@freure.com");
+            Contact c2 = new Contact("Augerau", "stephi.lopipi@gmail.com");
+            Contact c3 = new Contact("tonton_57", "gregoire.hirtz@fortnite.com");
 
-            // listeContacts.ajouterContact(c1);
-            // listeContacts.ajouterContact(c2);
-            // listeContacts.ajouterContact(c3);
+            listeContacts.ajouterContact(c1);
+            listeContacts.ajouterContact(c2);
+            listeContacts.ajouterContact(c3);
 
             // Donc là je récupère l'annuaire de charlemagne
             Registry reg = LocateRegistry.getRegistry("charlemagne.iutnc.univ-lorraine.fr", 3333); 
@@ -32,8 +32,6 @@ public class LancerListeContacts{
             servRep.nouveauService(rdListeContacts);
 
             // puis je dois constater qu'un contact a été ajouté à ma liste
-            System.out.println(listeContacts.liste.toString()  );
-            
 
         }catch(NotBoundException e){
             e.printStackTrace();   
