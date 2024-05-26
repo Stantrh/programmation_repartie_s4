@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ListeContacts implements ServiceAgenda{
-    private Map<String, Contact> liste = new HashMap<String, Contact>();
+    public Map<String, Contact> liste = new HashMap<String, Contact>();
     public ListeContacts(){ }
 
     public Contact accederContact(String pseudo) throws RemoteException{
